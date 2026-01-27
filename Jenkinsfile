@@ -2,13 +2,13 @@ pipeline {
 	agent any
 	environment {
 		DOCKERHUB_CRED=credentials('dockerhub')
-		IMAGE_NAME="<docker_hub_username>/<docker_hub_repo_name>"
+		IMAGE_NAME="<chethan2310/dev_f"
 	}
 	
 	stages {
 		stage('checkout') {
 			steps {
-				git url:'<github_repo_ssh_url>', branch:'main' 
+				git url:'https://github.com/1ms24mc022-bot/dev_f', branch:'main' 
 			}
 		}
 		
